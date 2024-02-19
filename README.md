@@ -18,7 +18,7 @@ Para desplegar la API usando Docker, sigue estos pasos:
 
 1. **Construir la Imagen Docker:**
 
-   La imagen Docker deberá de estar basada en `php:apache`, asegurándote de que te encuentras en el directorio raíz de tu proyecto (donde se encuentra tu `Dockerfile`):
+   La imagen Docker deberá de estar basada en `php:apache`, cuando crees tu imagen, asegurate de que te encuentras en el directorio raíz de tu proyecto (donde se encuentra tu `Dockerfile`):
 
 2. **Activar el Módulo Rewrite de Apache:**
    
@@ -45,10 +45,10 @@ La API expone los siguientes endpoints:
 
 ## Recomendaciones de despliegue
 
-Recuerda que esta API está enlazada con la aplicación `me.social`. Desde esta aplicación web, se realizan llamadas hasta esta api utilizando una URL de este tipo: 
+Recuerda que esta API está enlazada con la aplicación `me.social`. Desde esta aplicación web, se realizan llamadas de tipo GET hasta esta api utilizando una URL de este tipo: 
 - `http://api.me.social/profile` 
 - `http://api.me.social/timeline`
 - `http://api.me.social/friends` 
 - `http://api.me.social/photos`
 
-Asegúrate que funciona correctamente.
+Comprueba que funciona correctamente. Utiliza `POSTMAN` para ello.
